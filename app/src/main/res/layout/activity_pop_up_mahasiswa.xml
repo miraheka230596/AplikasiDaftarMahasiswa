@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.program.miraheka.aplikasidaftarmahasiswa.PopUpMahasiswa">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#000000"
+        android:id="@+id/relativeLayout"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#808080"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#404040"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout3"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageMahasiswaPop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="64dp"
+        app:srcCompat="@drawable/female"
+        android:layout_alignBottom="@+id/textMahasiswaPop"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textMahasiswaPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Mirah"
+        android:textSize="24sp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textNIMPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMahasiswaPop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="1301144318"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <ImageView
+        android:id="@+id/imageCall"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/callimg" />
+
+    <ImageView
+        android:id="@+id/imageMessage"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/msgimg" />
+    </LinearLayout>
+</RelativeLayout>
